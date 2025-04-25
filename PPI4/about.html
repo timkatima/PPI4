@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Brigade - Creative Works Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Pixel Pioneers Brigade</h1>
+    <p>Meet the Creative Minds Behind the Gallery</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="team">
+        <h2>Our Brigade</h2>
+        <p>Introducing the Pixel Pioneers, a team of four passionate artists who bring creativity to life through CorelDRAW, Photoshop, and Flash.</p>
+
+        <div class="team-member">
+            <img src="img/team/member1.jpg" alt="Alex" onclick="openLightbox('img/team/member1.jpg')">
+            <span class="fun-fact">Fun Fact: Alex once designed a logo in 10 minutes!</span>
+            <div>
+                <h3>Alex the Visionary</h3>
+                <p>Alex is our CorelDRAW maestro, crafting vibrant illustrations like the Pizza Peppermint Postcard. With an eye for detail, Alex turns ideas into visual masterpieces.</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="img/team/member2.jpg" alt="Sasha" onclick="openLightbox('img/team/member2.jpg')">
+            <span class="fun-fact">Fun Fact: Sasha’s Photoshop skills are out of this world!</span>
+            <div>
+                <h3>Sasha the Photoshop Wizard</h3>
+                <p>Sasha creates stunning Photoshop pieces, like the Walter White tribute postcard. Their knack for blending and retouching makes every image pop.</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="img/team/member3.jpg" alt="Max" onclick="openLightbox('img/team/member3.jpg')">
+            <span class="fun-fact">Fun Fact: Max animated a clock that ticks backward!</span>
+            <div>
+                <h3>Max the Animation Guru</h3>
+                <p>Max brings stories to life with Flash animations, like the mesmerizing Rain video. Their animations add motion and emotion to our gallery.</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="img/team/member4.jpg" alt="Dima" onclick="openLightbox('img/team/member4.jpg')">
+            <span class="fun-fact">Fun Fact: Dima’s designs are inspired by sci-fi!</span>
+            <div>
+                <h3>Dima the Creative Spark</h3>
+                <p>Dima’s innovative designs, like the Bialowieza Forest collage, push boundaries. They blend creativity and storytelling in every project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>Our Creative Mission</h2>
+        <p>We believe art is a universal language that inspires, connects, and transforms. The Pixel Pioneers Brigade is dedicated to pushing creative boundaries, one pixel at a time.</p>
+    </section>
+
+    <section class="interactive">
+        <h2>Inspirational Quotes</h2>
+        <div class="quote-rotator">
+            <p id="quote-text">Loading quote...</p>
+        </div>
+        <h2>Have Some Fun!</h2>
+        <p>Click below to unleash a burst of creativity!</p>
+        <button onclick="triggerConfetti()">Launch Confetti!</button>
+        <p>Or change the background color for a fresh vibe!</p>
+        <button onclick="changeBackground()">Change Background</button>
+    </section>
+
+
+</main>
+
+<div class="lightbox" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Lightbox Image">
+</div>
+
+<footer>
+    <p>© 2025 Creative Works Gallery. All rights reserved.</p>
+    <p><a href="mailto:contact@creativeworks.com" style="color: #4a90e2;">Contact Us</a></p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

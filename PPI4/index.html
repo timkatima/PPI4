@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Works Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+  <h1>Creative Works Gallery</h1>
+  <p>Showcasing CorelDRAW, Photoshop, and Flash Animation Projects</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="corel">
+    <h2>CorelDRAW Creations</h2>
+    <p>Ниже вы можете пронаблюдать великие произведения человечества</p>
+    <table>
+
+      <tr>
+        <th>Название</th>
+        <th>Описание</th>
+        <th>Техники</th>
+      </tr>
+      <tr>
+        <td>Открытка</td>
+        <td>Открытка поздравления с днем пиццы пепперони призывающая блогополучие</td>
+        <td>Techniques Used</td>
+      </tr>
+      <tr>
+        <td>3д фигура</td>
+        <td>Вечерний пляж с посланием в бутылке, навевающий спокойствие и вызывающий желание присесть и отдохнуть</td>
+        <td>Retouching, Layer Effects</td>
+      </tr>
+      <tr>
+        <td>Детский рисунок</td>
+        <td>Ночной пейзаж со стальным гигантом наблюдающим за тем чтобы лес спал спокойно</td>
+        <td>Blending, Filters</td>
+      </tr>
+    </table>
+    <div class="gallery">
+      <img src="img/corel/kizino/PPI1.png" alt="Women's Day Card" onclick="openLightbox('img/corel/kizino/PPI1.png')">
+      <img src="img/corel/kizino/PPI2.png" alt="Children's Illustration" onclick="openLightbox('img/corel/kizino/PPI2.png')">
+      <img src="img/corel/kizino/PPI3.png" alt="3D Still Life" onclick="openLightbox('img/corel/kizino/PPI3.png')">
+    </div>
+  </section>
+
+  <section id="photoshop">
+    <h2>Photoshop Masterpieces</h2>
+    <p>Познайте мир исскуства с оригинальными работами маестро</p>
+    <div class="gallery gallery-column">
+      <ul>
+        <li>Открытка посвященная Уолтеру Хартвелу Увайту, великому химику и его не особо выдающемуся, но усердному ученику</li>
+      <img src="img/photoshop/kizino/Открытка.png" alt="Portrait" onclick="openLightbox('img/photoshop/kizino/Открытка.png')">
+        <li>Портрет в честь фронтмена группы System of a Down Сержу Танкиану. Его музыка будет жить вечно также как и он сам</li>
+      <img src="img/photoshop/kizino/Портрет.png" alt="Collage" onclick="openLightbox('img/photoshop/kizino/Портрет.png')">
+        <li>Тайны беловежской пущи возможно никгода не будут расскрыты. Какие опасности могут там таиться. Возможно опасности не там где ты их ожидаешь.
+            <a href="https://oz.by/books/more10796109.html">
+              ❝ Всегда старайся лучше разобраться в ситуации, прежде чем делать выводы. ❞
+            </a>
+              - Хан
+
+        </li>
+      <img src="img/photoshop/kizino/Коллаж.png" alt="Card" onclick="openLightbox('img/photoshop/kizino/Коллаж.png')">
+      </ul>
+    </div>
+  </section>
+
+  <section id="flash">
+    <h2>Flash Animations</h2>
+    <p>These animations, originally created in Macromedia Flash, are presented as video files.</p>
+    <div class="gallery">
+      <video controls>
+        <source src="assets/flash/car.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="assets/flash/rain.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video controls>
+        <source src="assets/flash/clock.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="interactive">
+    <h2>Interactive Element</h2>
+    <p>Click the button to change the background color!</p>
+    <button onclick="changeBackground()">Change Background</button>
+  </section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="Lightbox Image">
+</div>
+
+<footer>
+  <p>&copy; 2025 Creative Works Gallery. All rights reserved.</p>
+  <p><a href="mailto:contact@creativeworks.com" style="color: #4a90e2;">Contact Us</a></p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
